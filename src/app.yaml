@@ -1,0 +1,14 @@
+# [START django_app]
+#application: cebar-servinf-agrodat-ai-dev
+#version: beta2
+runtime: nodejs12
+instance_class: F1
+
+handlers:
+- url: /.*
+  secure: always
+  script: auto
+  
+default_expiration: "3s"
+
+
